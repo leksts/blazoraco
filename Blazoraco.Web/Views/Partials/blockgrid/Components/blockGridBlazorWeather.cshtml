@@ -1,0 +1,7 @@
+@using Umbraco.Cms.Web.Common.PublishedModels
+@using Umbraco.Cms.Core.Models.Blocks
+@using Blazoraco.Web.Client.Components
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<BlockGridBlazorWeather>>
+
+<component type="typeof(BlazorWeather)" render-mode="WebAssemblyPrerendered" />
+<persist-component-state />

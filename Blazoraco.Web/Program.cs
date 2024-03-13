@@ -1,10 +1,14 @@
+using Blazoraco.Contracts.Weather;
 using Blazoraco.Web.Client;
+using Blazoraco.Web.Weather;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder().AddBackOffice().AddWebsite().AddDeliveryApi().AddComposers().Build();
 
 builder.Services.AddRazorComponents().AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddTransient<IWeatherService, WeatherService>();
 
 WebApplication app = builder.Build();
 

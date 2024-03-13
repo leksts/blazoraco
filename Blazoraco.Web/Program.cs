@@ -1,5 +1,6 @@
 using Blazoraco.Contracts.Weather;
 using Blazoraco.Web.Client;
+using Blazoraco.Web.Client.Counters;
 using Blazoraco.Web.Weather;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,7 @@ builder.CreateUmbracoBuilder().AddBackOffice().AddWebsite().AddDeliveryApi().Add
 builder.Services.AddRazorComponents().AddInteractiveWebAssemblyComponents();
 
 builder.Services.AddTransient<IWeatherService, WeatherService>();
+builder.Services.AddScoped<CounterState>();
 
 WebApplication app = builder.Build();
 

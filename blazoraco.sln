@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazoraco.Web", "Blazoraco.Web\Blazoraco.Web.csproj", "{45D78138-D15C-417A-9ADB-A1AD1F1E50DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazoraco.Web.Client", "Blazoraco.Web.Client\Blazoraco.Web.Client.csproj", "{30667C66-9ECA-407A-BB25-70378D06EACE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{45D78138-D15C-417A-9ADB-A1AD1F1E50DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45D78138-D15C-417A-9ADB-A1AD1F1E50DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45D78138-D15C-417A-9ADB-A1AD1F1E50DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30667C66-9ECA-407A-BB25-70378D06EACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30667C66-9ECA-407A-BB25-70378D06EACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30667C66-9ECA-407A-BB25-70378D06EACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30667C66-9ECA-407A-BB25-70378D06EACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,10 @@
+using Blazoraco.Web.Client;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder().AddBackOffice().AddWebsite().AddDeliveryApi().AddComposers().Build();
+
+builder.Services.AddRazorComponents().AddInteractiveWebAssemblyComponents();
 
 WebApplication app = builder.Build();
 
@@ -18,5 +22,7 @@ app.UseUmbraco()
         u.UseBackOfficeEndpoints();
         u.UseWebsiteEndpoints();
     });
+
+app.MapRazorComponents<App>().AddInteractiveWebAssemblyRenderMode();
 
 await app.RunAsync();

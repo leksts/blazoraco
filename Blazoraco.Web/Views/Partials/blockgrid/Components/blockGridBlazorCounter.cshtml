@@ -1,0 +1,6 @@
+@using Umbraco.Cms.Web.Common.PublishedModels
+@using Umbraco.Cms.Core.Models.Blocks
+@using Blazoraco.Web.Client.Components
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<BlockGridBlazorCounter>>
+
+<component type="typeof(BlazorCounter)" render-mode="WebAssemblyPrerendered" />

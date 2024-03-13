@@ -1,0 +1,7 @@
+@using Umbraco.Cms.Web.Common.PublishedModels
+@using Umbraco.Cms.Core.Models.Blocks
+@using Blazoraco.Web.Client.Components
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem<BlockGridBlazorHeadline>>
+
+<component type="typeof(BlazorHeadline)" param-Headline="@Model.Content.Headline"
+	render-mode="WebAssemblyPrerendered" />

@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NetEscapades.AspNetCore.SecurityHeaders.TagHelpers" Version="0.21.0" />
     <PackageReference Include="Umbraco.Cms" Version="13.2.0" />
     <PackageReference Include="uSync" Version="13.1.2" />
   </ItemGroup>
